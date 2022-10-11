@@ -8,24 +8,14 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """ Method to initialize the square object
         Args:
-            size: represnets the size of the square defined
-            position: represents the position of the square defined
-        Raises:
-            TypeError: if size is not integer
-            ValueError: if size is less than zero
+            size: length of a side of Square
+            position: where the square is (coordinates)
         """
+        self.size = size
+        self.position = position
 
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
-
-        if not isinstance(position, tuple) and position[0] >= 0 and position[1] >= 0:
-            raise TypeError('position must be a tuple of 2 positive integers')
-        else:
-            self.__position = position
+    def __str__(self):
+        self.my_print()
 
     def area(self):
         """
