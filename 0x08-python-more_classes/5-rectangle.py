@@ -36,6 +36,11 @@ class Rectangle:
 
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
+    def __del__(self):
+        """prints a message for every object that is deleted"""
+
+        print("Bye rectangle...")
+
     @property
     def height(self):
         """retrieves height attribute"""
