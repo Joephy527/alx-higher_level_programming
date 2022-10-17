@@ -5,6 +5,8 @@
 class Rectangle:
     """this represents a rectangle"""
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initializing this rectangle class
         Args:
@@ -17,6 +19,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """presents a diagram of the rectangle defined for an object"""
@@ -40,6 +43,7 @@ class Rectangle:
         """prints a message for every object that is deleted"""
 
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
 
     @property
     def height(self):
