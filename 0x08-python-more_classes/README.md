@@ -1,5 +1,5 @@
 # More Classes and Objects
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about object oriented programming (OOP), Data Abstraction, Data Encapsulation, instances and classes attributes in **Python**.
+Project done during **Full Stack Software Engineering studies** at **ALX and Holberton School**. It aims to learn about object oriented programming (OOP), Data Abstraction, Data Encapsulation, instances and classes attributes in **Python**.
 
 ## Files
 | Filename | Description |
