@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""This module contains a class to serve as base for other classes"""
-
+"""a class to serve as base for other classes"""
 
 import csv
 import json
@@ -51,7 +50,7 @@ class Base:
 
         json_string_list = []
 
-        if json_string is not None and json_string != '':
+        if json_string is not None and json_string is not '':
             if type(json_string) != str:
                 raise TypeError("json_string must be a string")
             json_string_list = json.loads(json_string)
