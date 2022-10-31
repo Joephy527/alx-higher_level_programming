@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-""" Module that contains class Base """
+"""This module contains a class to serve as base for other classes"""
 
 
 class Base:
-    """ Class Base """
+    """Represents base of all classes created """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ Initializes instances """
+        """initializes instances"""
 
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
