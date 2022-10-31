@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contains a class to serve as base for other classes"""
+"""a class to serve as base for other classes"""
 
 
 class Base:
